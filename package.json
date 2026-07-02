@@ -1,0 +1,22 @@
+{
+  "name": "testhari2",
+  "version": "1.0.0",
+  "description": "Test Pelatihan CI/CD Hari 2",
+  "homepage": "https://github.com/maulanapp/Testhari2#readme",
+  "bugs": {
+    "url": "https://github.com/maulanapp/Testhari2/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maulanapp/Testhari2.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src scripts",
+    "build": "node scripts/validate-build.js",
+    "start": "node -e \"console.log(require('./src/stringUtils').capitalize('halo dunia'))\""
+  }
+}
