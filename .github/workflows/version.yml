@@ -1,0 +1,16 @@
+# Demo berbagai trigger. (Hanya bahan belajar — job-nya cuma echo.)
+name: Version
+
+on:
+  # Case A: setiap push ke branch tertentu
+  push:
+    tags: ['v*.*.*']
+
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Tampilkan pemicu
+        run: |
+          echo "Pipeline dipicu oleh: ${{ github.event_name }}"
+          echo "Branch/Ref: ${{ github.ref }}"
